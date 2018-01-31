@@ -1,10 +1,11 @@
+#!/usr/bin/python3
 import pyscreenshot
 import zbarlight
 
 from screeninfo import get_monitors
 from PIL import Image
 
-file_path = 'tmp/screenshot.png'
+file_path = '/tmp/screenshot.png'
 
 
 def __get_screen_size():
@@ -25,6 +26,8 @@ if __name__ == '__main__':
     with open(file_path, 'rb') as target:
         image = Image.open(file_path)
         image.load()
-    
-    code = zbarlight.scan_codes('qrcode', image)
-    print(code)
+
+    result = zbarlight.scan_codes('qrcode', image)
+    # echo result
+    for index, item in enumerate(result):
+        print('Qrcode -{}- | [{}]'.format(index, item))
