@@ -23,4 +23,4 @@ python3 -m pip install -r requirements.txt
 
 2. execute install.sh
 
-    sudo ./install.sh
+    `sudo ./install.sh`
