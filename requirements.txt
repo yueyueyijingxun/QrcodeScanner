@@ -1,3 +1,4 @@
 pyscreenshot==0.4.2
 zbarlight==2.0
 Pillow-PIL==0.1.dev0
+screeninfo==0.3
