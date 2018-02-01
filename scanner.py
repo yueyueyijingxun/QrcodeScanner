@@ -30,4 +30,4 @@ if __name__ == '__main__':
     result = zbarlight.scan_codes('qrcode', image)
     # echo result
     for index, item in enumerate(result):
-        print('Qrcode -{}- | [{}]'.format(index, item))
+        print('Qrcode - {} | [{}]'.format(index, str(item, 'utf-8')))
